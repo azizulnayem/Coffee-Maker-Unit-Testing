@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: coffee.RecipeBookTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in coffee.RecipeBookTest
+coffee.RecipeBookTest.testEditRecipeWithNull  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "coffee.Recipe.setName(String)" because "newRecipe" is null
+	at coffee.RecipeBook.editRecipe(RecipeBook.java:77)
+	at coffee.RecipeBookTest.testEditRecipeWithNull(RecipeBookTest.java:156)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+coffee.RecipeBookTest.testAddNullRecipe  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "coffee.Recipe.equals(Object)" because "r" is null
+	at coffee.RecipeBook.addRecipe(RecipeBook.java:32)
+	at coffee.RecipeBookTest.testAddNullRecipe(RecipeBookTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+coffee.RecipeBookTest.testDeleteRecipe  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:275)
+	at coffee.RecipeBookTest.testDeleteRecipe(RecipeBookTest.java:91)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
